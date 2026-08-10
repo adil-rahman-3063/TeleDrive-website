@@ -21,10 +21,22 @@ export default function Creator() {
             👨‍💻
           </div>
           <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>Adil Rahiman</h3>
-          <p style={{ opacity: 0.8, marginBottom: "1.5rem" }}>Creator & Lead Developer</p>
-          <a href="https://github.com/adil-rahman-3063" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem" }}>
-            View GitHub Profile
-          </a>
+          <p style={{ opacity: 0.8, marginBottom: "2rem" }}>Creator & Lead Developer</p>
+          
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
+            <a href="https://github.com/adil-rahman-3063" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 calc(50% - 0.5rem)" }}>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/adil-rahiman-3815b5290/" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 calc(50% - 0.5rem)" }}>
+              LinkedIn
+            </a>
+            <a href="https://x.com/adilrahmanms" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 calc(50% - 0.5rem)" }}>
+              X (Twitter)
+            </a>
+            <a href="https://www.instagram.com/adil__rahman_" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 calc(50% - 0.5rem)" }}>
+              Instagram
+            </a>
+          </div>
         </div>
 
         {/* Support Options */}
