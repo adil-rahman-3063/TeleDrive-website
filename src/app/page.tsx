@@ -42,7 +42,7 @@ export default function Home() {
   }, { scope: container });
 
   return (
-    <main ref={container} style={{ width: "100%", overflowX: "hidden" }}>
+    <main ref={container} style={{ width: "100%" }}>
       <div className="gsap-reveal">
         <Hero />
       </div>
