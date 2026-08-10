@@ -32,6 +32,9 @@ export default function Creator() {
           <p style={{ opacity: 0.8, marginBottom: "2rem" }}>Creator & Lead Developer</p>
           
           <div style={{ display: "flex", flexWrap: "wrap", gap: "1rem", justifyContent: "center" }}>
+            <a href="https://adilrahman.cc" target="_blank" rel="noreferrer" className="glass-btn glass-btn-primary" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 100%" }}>
+              Portfolio (adilrahman.cc)
+            </a>
             <a href="https://github.com/adil-rahman-3063" target="_blank" rel="noreferrer" className="glass-btn" style={{ padding: "8px 16px", fontSize: "0.875rem", flex: "1 1 calc(50% - 0.5rem)" }}>
               GitHub
             </a>
