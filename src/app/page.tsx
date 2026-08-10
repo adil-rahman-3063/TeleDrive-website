@@ -8,7 +8,6 @@ import { useGSAP } from "@gsap/react";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Download from "../components/Download";
-import Improvize from "../components/Improvize";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -52,9 +51,6 @@ export default function Home() {
       </div>
       <div className="gsap-reveal">
         <Download />
-      </div>
-      <div className="gsap-reveal">
-        <Improvize />
       </div>
     </main>
   );
