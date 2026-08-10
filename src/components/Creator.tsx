@@ -17,9 +17,17 @@ export default function Creator() {
         
         {/* Creator Info */}
         <div className="glass-panel" style={{ flex: "1 1 300px", padding: "3rem", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-          <div style={{ width: "80px", height: "80px", borderRadius: "50%", background: "linear-gradient(135deg, #0096ff, #0064ff)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: "2.5rem", marginBottom: "1.5rem", boxShadow: "0 4px 12px rgba(0, 150, 255, 0.4)" }}>
-            👨‍💻
-          </div>
+          <div style={{ 
+            width: "80px", 
+            height: "80px", 
+            borderRadius: "50%", 
+            marginBottom: "1.5rem", 
+            boxShadow: "0 4px 12px rgba(0, 150, 255, 0.4)",
+            backgroundImage: "url('/profile.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            border: "2px solid rgba(255, 255, 255, 0.1)"
+          }}></div>
           <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>Adil Rahiman</h3>
           <p style={{ opacity: 0.8, marginBottom: "2rem" }}>Creator & Lead Developer</p>
           
