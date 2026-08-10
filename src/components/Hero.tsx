@@ -23,7 +23,7 @@ export default function Hero() {
         </h1>
         
         <p style={{ fontSize: "1.25rem", marginBottom: "3rem", opacity: 0.8, maxWidth: "600px", margin: "0 auto 3rem auto" }}>
-          TeleDrive transforms your private Telegram channels into an effectively unlimited cloud storage solution with a beautiful, responsive interface.
+          Upload, organize, and stream your photos, videos, and files — backed by Telegram's free, unlimited storage. Self-hosted. Open source. No subscription required.
         </p>
         
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>

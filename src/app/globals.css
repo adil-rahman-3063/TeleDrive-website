@@ -19,14 +19,11 @@ html {
   scroll-behavior: smooth;
 }
 
-html, body {
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   width: 100%;
-}
-
-body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;

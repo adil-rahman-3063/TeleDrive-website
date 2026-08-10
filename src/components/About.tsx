@@ -15,10 +15,11 @@ export default function About() {
           </p>
           <ul style={{ listStyle: "none", padding: 0, margin: "0 0 2rem 0", display: "flex", flexDirection: "column", gap: "1rem" }}>
             {[
-              "Unlimited file uploads (up to Telegram limits)",
-              "Fast, reliable infrastructure",
-              "End-to-end organizational structure with Collections",
-              "Beautiful dark mode aesthetics"
+              "Media Viewer — Full-screen image & video playback",
+              "Native Video Streaming — Instant scrubbing via HTTP Range requests",
+              "Real-time Progress — WebSockets for instant tracking",
+              "Intelligent Local Caching — Loads files instantly once downloaded",
+              "Self-hosted — Your data stays on your Telegram account"
             ].map((feature, i) => (
               <li key={i} style={{ display: "flex", alignItems: "center", gap: "12px" }}>
                 <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: "rgba(0, 150, 255, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", color: "#0096ff" }}>✓</div>
