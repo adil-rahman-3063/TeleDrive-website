@@ -32,15 +32,15 @@ export default function About() {
         <div style={{ flex: "1 1 400px", display: "grid", gap: "1.5rem", gridTemplateColumns: "repeat(2, 1fr)" }}>
           {/* Dashboard stat cards */}
           <div className="glass-panel" style={{ padding: "2rem", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
-            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>4</div>
+            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>∞</div>
             <div style={{ fontSize: "0.875rem", color: "#8c8f99", textTransform: "uppercase", letterSpacing: "1px" }}>Photos</div>
           </div>
           <div className="glass-panel" style={{ padding: "2rem", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center" }}>
-            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>1</div>
+            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>∞</div>
             <div style={{ fontSize: "0.875rem", color: "#8c8f99", textTransform: "uppercase", letterSpacing: "1px" }}>Videos</div>
           </div>
           <div className="glass-panel" style={{ padding: "2rem", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", textAlign: "center", gridColumn: "span 2" }}>
-            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>1</div>
+            <div style={{ fontSize: "3rem", fontWeight: 700, marginBottom: "0.5rem" }}>∞</div>
             <div style={{ fontSize: "0.875rem", color: "#8c8f99", textTransform: "uppercase", letterSpacing: "1px" }}>Collections</div>
           </div>
         </div>
