@@ -19,13 +19,19 @@ export default function Download() {
       <div style={{ position: "relative", width: "100%", minHeight: "400px", display: "flex", justifyContent: "center", perspective: "1000px" }}>
         
         {/* State: Show OS Command */}
-        {selectedOS === "windows" && (
+        {selectedOS && (
           <div className="glass-panel" style={{ width: "100%", maxWidth: "1000px", padding: "4rem", animation: "fadeIn 0.5s ease-out", display: "flex", flexDirection: "column", alignItems: "center", textAlign: "center" }}>
-            <h3 style={{ fontSize: "2rem", marginBottom: "1rem" }}>Install via Command Prompt</h3>
+            <h3 style={{ fontSize: "2rem", marginBottom: "1rem" }}>
+              Install via {selectedOS === "windows" ? "Command Prompt" : "Terminal"}
+            </h3>
             <p style={{ opacity: 0.8, marginBottom: "2rem" }}>Run the following command in your terminal to clone and setup TeleDrive.</p>
             
             <div className="glass-panel" style={{ padding: "1.5rem 2rem", background: "rgba(0,0,0,0.6)", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px", fontFamily: "monospace", fontSize: "1.2rem", color: "#0096ff", marginBottom: "3rem", display: "flex", alignItems: "center", gap: "1rem" }}>
-              <span style={{ color: "#8c8f99" }}>&gt;</span> git clone https://github.com/adil-rahman-3063/TeleDrive.git && cd TeleDrive && setup.bat
+              <span style={{ color: "#8c8f99" }}>&gt;</span> 
+              {selectedOS === "windows" 
+                ? "git clone https://github.com/adil-rahman-3063/TeleDrive.git && cd TeleDrive && setup.bat"
+                : "git clone https://github.com/adil-rahman-3063/TeleDrive.git && cd TeleDrive && chmod +x setup.sh && ./setup.sh"
+              }
             </div>
             
             <button className="glass-btn" onClick={() => setSelectedOS(null)} style={{ display: "flex", alignItems: "center", gap: "8px" }}>
@@ -46,9 +52,9 @@ export default function Download() {
               <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem", marginTop: "1rem" }}>Run Setup</h3>
               <p style={{ opacity: 0.8, marginBottom: "2rem" }}>Clone the repository and run the setup script for your OS.</p>
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem" }}>
-                <button className="glass-btn" style={{ width: "100%" }}>macOS (setup.sh)</button>
+                <button className="glass-btn" onClick={() => setSelectedOS("macos")} style={{ width: "100%" }}>macOS (setup.sh)</button>
                 <button className="glass-btn glass-btn-primary" onClick={() => setSelectedOS("windows")} style={{ width: "100%" }}>Windows (setup.bat)</button>
-                <button className="glass-btn" style={{ width: "100%" }}>Linux (setup.sh)</button>
+                <button className="glass-btn" onClick={() => setSelectedOS("linux")} style={{ width: "100%" }}>Linux (setup.sh)</button>
               </div>
             </div>
 
