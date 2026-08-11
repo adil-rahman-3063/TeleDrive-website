@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Download from "../components/Download";
+import GithubActivity from "../components/GithubActivity";
 import Creator from "../components/Creator";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -53,6 +54,7 @@ export default function Home() {
       <div className="gsap-reveal">
         <Download />
       </div>
+      <GithubActivity />
       <div className="gsap-reveal">
         <Creator />
       </div>
